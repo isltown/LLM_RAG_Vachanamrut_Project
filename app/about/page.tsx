@@ -1,5 +1,4 @@
 import { AboutDeveloperSection } from '@/components/about-developer'
-import { CommunityImpactSection } from '@/components/community-impact'
 import { MotivationSection } from '@/components/motivation'
 import { TechnicalOverviewSection } from '@/components/technical-overview'
 import React from 'react'
