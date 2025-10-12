@@ -1,10 +1,9 @@
 <a href="https://github.com/isltown/Vachnamrut-RAG-LLM">
-  <img alt="Vachnamrut RAG LLM – AI chatbot for Gujarati scripture reasoning" src="assets/vachnamrut-banner.png">
   <h1 align="center">Vachnamrut RAG LLM API</h1>
 </a>
 
 <p align="center">
-  An AI-powered Gujarati chatbot that answers questions from the original <em>Vachnamrut</em> scripture using Retrieval-Augmented Generation (RAG) with Large Language Models.
+  An AI-powered Gujarati chatbot that answers questions from the original <em>Vachnamrut</em> scripture using Retrieval-Augmented Generation (RAG) with Open Source Large Language Model (Gemma 2 9B).
 </p>
 
 <p align="center">
@@ -16,7 +15,7 @@
 
 <br/>
 
-## ✨ Features
+##  Features
 
 - **Gujarati Language Support**
   - Understands and responds in Gujarati, based on the authentic *Vachnamrut* text.
@@ -31,7 +30,7 @@
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 The system follows a **RAG (Retrieval-Augmented Generation)** pipeline:
 
@@ -41,10 +40,12 @@ The system follows a **RAG (Retrieval-Augmented Generation)** pipeline:
 4. **LLM Generation** – Passes the context to a model like `google/gemma-2-9b-it` for answer generation.  
 5. **Response** – Returns a Gujarati answer with (Chapter ID) citations.
 
-```mermaid
-graph TD;
-    A[User Query] --> B[Sentence Embedding];
-    B --> C[Semantic & BM25 Retrieval];
-    C --> D[Context Expansion];
-    D --> E[LLM (Gemma 2)];
-    E --> F[Gujarati Answer + Chapter References];
+
+flowchart TD
+    A["User Query"] --> B["Sentence Embedding (Gujarati SBERT)"]
+    B --> C["Semantic Retrieval (FAISS)"]
+    C --> D["BM25 Lexical Ranking"]
+    D --> E["MMR Re-ranking + Context Expansion"]
+    E --> F["LLM: Gemma 2 (9B IT)"]
+    F --> G["Gujarati Answer with (Chapter ID)"]
+
