@@ -36,7 +36,7 @@ The system follows a **RAG (Retrieval-Augmented Generation)** pipeline:
 API Hosted using Hugging Face Space. (Link - https://huggingface.co/spaces/nk233/vachnamrut_api/tree/main)
 
 ## FlowChart
-<img width="864" height="480" alt="Screenshot 2025-10-12 at 9 22 33 PM" src="https://github.com/user-attachments/assets/714cab44-7beb-4a41-a580-992d4b13cddf" />
+<img width="843" height="463" alt="Screenshot 2025-10-12 at 9 35 59 PM" src="https://github.com/user-attachments/assets/6c22ee6e-1d03-4a23-bcb9-c5061cc36218" />
 
 ## Website
 Link - https://vachnamrut-chatbot.vercel.app/
