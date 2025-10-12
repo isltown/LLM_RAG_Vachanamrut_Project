@@ -1,16 +1,9 @@
 <a href="https://github.com/isltown/Vachnamrut-RAG-LLM">
-  <h1 align="center">Vachnamrut RAG LLM API</h1>
+  <h1 align="center">Vachanamrut RAG LLM Project</h1>
 </a>
 
 <p align="center">
-  An AI-powered Gujarati chatbot that answers questions from the original <em>Vachnamrut</em> scripture using Retrieval-Augmented Generation (RAG) with Open Source Large Language Model (Gemma 2 9B).
-</p>
-
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#architecture"><strong>Architecture</strong></a> ·
-  <a href="#run-locally"><strong>Run Locally</strong></a> ·
-  <a href="#api-endpoints"><strong>API Endpoints</strong></a>
+  An AI-powered Gujarati chatbot that answers questions from the original <em>Vachanamrut</em> scripture using Retrieval-Augmented Generation (RAG) with Open Source Large Language Model (Gemma-2-9B).
 </p>
 
 <br/>
@@ -28,19 +21,24 @@
 - **Modular Components**
   - FAISS for semantic retrieval, Hugging Face for inference, Sentence-BERT for embeddings.
 
----
+<br/>
 
-## Architecture
+## API Architecture (Code at /Backend/app.py)
 
 The system follows a **RAG (Retrieval-Augmented Generation)** pipeline:
 
-1. **Semantic Search** – Encodes the user query using `l3cube-pune/gujarati-sentence-bert-nli`.  
-2. **Hybrid Retrieval** – Uses FAISS (semantic) + BM25 (lexical) + MMR selection for top passages.  
+1. **Semantic Search** – Encodes the user query using `l3cube-pune/gujarati-sentence-bert-nli` encoding model.  
+2. **Hybrid Retrieval** – Uses FAISS (Facebook AI Similarity Search) + BM25 (Best Matching 25) + MMR (Maximal Marginal Relevance) selection for top passages.  
 3. **Context Expansion** – Adds nearby scripture lines for depth and coherence.  
 4. **LLM Generation** – Passes the context to a model like `google/gemma-2-9b-it` for answer generation.  
 5. **Response** – Returns a Gujarati answer with (Chapter ID) citations.
 
+API Hosted using Hugging Face Space. (Link - https://huggingface.co/spaces/nk233/vachnamrut_api/tree/main)
+
 ## FlowChart
 <img width="864" height="480" alt="Screenshot 2025-10-12 at 9 22 33 PM" src="https://github.com/user-attachments/assets/714cab44-7beb-4a41-a580-992d4b13cddf" />
+
+## Website
+Link - https://vachnamrut-chatbot.vercel.app/
 
 
