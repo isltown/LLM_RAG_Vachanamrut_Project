@@ -40,12 +40,7 @@ The system follows a **RAG (Retrieval-Augmented Generation)** pipeline:
 4. **LLM Generation** – Passes the context to a model like `google/gemma-2-9b-it` for answer generation.  
 5. **Response** – Returns a Gujarati answer with (Chapter ID) citations.
 
+## FlowChart
+<img width="864" height="480" alt="Screenshot 2025-10-12 at 9 22 33 PM" src="https://github.com/user-attachments/assets/714cab44-7beb-4a41-a580-992d4b13cddf" />
 
-flowchart TD
-    A["User Query"] --> B["Sentence Embedding (Gujarati SBERT)"]
-    B --> C["Semantic Retrieval (FAISS)"]
-    C --> D["BM25 Lexical Ranking"]
-    D --> E["MMR Re-ranking + Context Expansion"]
-    E --> F["LLM: Gemma 2 (9B IT)"]
-    F --> G["Gujarati Answer with (Chapter ID)"]
 
