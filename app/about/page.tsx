@@ -8,7 +8,6 @@ const page = () => {
     <div className="flex flex-col size-full items-center pt-10">
     <MotivationSection />
       <TechnicalOverviewSection/>
-      <CommunityImpactSection />
       <AboutDeveloperSection/>
     </div>
   )
