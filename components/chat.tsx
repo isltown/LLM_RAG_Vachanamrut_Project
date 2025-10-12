@@ -35,9 +35,11 @@ export function Chat() {
       ) : (
         <div className="flex flex-col gap-0.5 sm:text-2xl text-xl w-full">
           <center>
+          <b>
           <div className="dark:text-zinc-500 text-zinc-400">
             મને વચનામૃત વિશે પ્રશ્નો પૂછો!
           </div>
+          </b>
           </center>
         </div>
       )}
