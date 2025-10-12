@@ -39,6 +39,6 @@ API Hosted using Hugging Face Space. (Link - https://huggingface.co/spaces/nk233
 <img width="843" height="463" alt="Screenshot 2025-10-12 at 9 35 59 PM" src="https://github.com/user-attachments/assets/6c22ee6e-1d03-4a23-bcb9-c5061cc36218" />
 
 ## Website
-Link - https://vachnamrut-chatbot.vercel.app/
+Link - https://llm-rag-vachnamrut-project.vercel.app/
 
 
