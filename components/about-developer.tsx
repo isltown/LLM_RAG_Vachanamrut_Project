@@ -10,22 +10,19 @@ export function AboutDeveloperSection() {
 
         <div className="mt-4 space-y-4 text-sm leading-relaxed text-muted-foreground">
           <p>
-            I&apos;m <span className="text-foreground font-medium">Your Name</span>, a B.Tech student at VIT Vellore,
+            I&apos;m <span className="text-foreground font-medium">Nyal Dhirajlal Kakadia</span>, a B.Tech student at VIT Vellore,
             passionate about Deep Learning and AI accessibility. I built this project to bridge culture and technology —
             bringing trustworthy, Gujarati-language answers to the “Vachanamrut.”
           </p>
           <p>
-            Future plans:{" "}
-            <em>
               “I aim to continue building AI systems that respect linguistic, cultural, and ethical boundaries — a
               direction I wish to deepen through the MSAII program at Carnegie Mellon.”
-            </em>
           </p>
 
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <Button asChild variant="secondary">
               <a
-                href="https://github.com/yourname"
+                href="https://github.com/isltown"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="GitHub profile"
@@ -35,7 +32,7 @@ export function AboutDeveloperSection() {
             </Button>
             <Button asChild variant="outline">
               <a
-                href="https://www.linkedin.com/in/yourname"
+                href="www.linkedin.com/in/nyal-dhirajlal-kakadia"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="LinkedIn profile"
