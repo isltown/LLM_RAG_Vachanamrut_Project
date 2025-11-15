@@ -1,5 +1,5 @@
 <a href="https://github.com/isltown/Vachnamrut-RAG-LLM">
-  <h1 align="center">RAG LLM Question Answering System on the Vachanamrut Scripture</h1>
+  <h1 align="center">LLM RAG Question Answering System on the Vachanamrut Scripture</h1>
 </a>
 
 <p align="center">
